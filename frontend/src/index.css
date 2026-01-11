@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+    --color-dark-bg: #0f111a;
+    --color-card-bg: #1e2230;
+    --color-neon-blue: #00f2ff;
+    --color-neon-pink: #ff0050;
+    --color-neon-purple: #bd00ff;
+    --color-neon-yellow: #facc15;
+}
+
+body {
+    background-color: var(--color-dark-bg);
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+    background: rgba(30, 34, 48, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card {
+    background: linear-gradient(145deg, rgba(30, 34, 48, 0.9), rgba(20, 24, 38, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.text-glow-blue {
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+}
+
+.text-glow-pink {
+    text-shadow: 0 0 10px rgba(255, 0, 80, 0.5);
+}
